@@ -1,2 +1,2 @@
 # connect-platform
-cygnoz.connect-paltform
+cygnoz.connect-platform
