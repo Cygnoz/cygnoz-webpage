@@ -25,45 +25,72 @@
         <div class="fas fa-bars"></div>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">home</a></li>
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#service">Services</a></li>
                 <li><a href="careers.html">Careers</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                
             </ul>
         </nav>
     </header>
 
   <section id="home" class="home">
-      <h1>We Don't Just Build Softwares,</h1>
+      <h1>We Don't Just Build Software,</h1>
       <h2>We Build Your Business.</h2>
     <div class="wave wave1"></div>
     <div class="wave wave2"></div>
     <div class="wave wave3"></div>
   </section>
 
-  <section id="about" class="about">
-    <h1 class="heading">about us</h1>
+  <!-- <section id="about" class="about">
+    <h1 class="heading">About Us</h1>
     <div class="row">
         <div class="content">
-            <h3>Cygnoz isn't merely a software company!</h3>
-            <p>We're
-                innovators redefining global success for past <b>5 years.</b> <br> Our unwavering commitment,
-                beyond promises,drives businesses in beyond conventional
-                expectations.<br>
-                With pride, we craft tailored solutions, setting new benchmarks
-                worldwide.<br>Ours is a team of creatives that is brainstorming on
-                great ideas,all the time.<br>
-                With our skills put together,you get an ensemble capable of doing
-                anything and everything your business needs.
+          
+            <p>Cygnoz is a Tier 1 global software solutions company headquartered in Kochi, Kerala, India and was established in 2019. Our clientele includes over 200 customers located in Asia Pacific, Middle East including Saudi Arabia. We provide software solutions and technology services to our customers to solve their business problems and assist in growing businesses. Cygnoz Connect Platform is enabling online businesses through a cost effective seamless secure business channel to perform businesses globally. ﻿﻿Our data driven automation solutions provides Advanced Analytics Engineering capabilities to provide businesses to prevent potential losses emerging from human errors, fraud and more. Many more advanced solutions through analytics engineering including real time business monitoring and forecast assisting businesses to make timely decisions. At Cygnoz, our commitment is underpinned to integrity, excellence, and customer satisfaction. It is the foundation of everything that we do. Thank you for taking time to learn about us. We look forward to serve your business through innovative solutions and services.
               </p>
             
             <a href="#"><button class="btn">Read More</button></a>
         </div>
     </div>
-  </section>
+  </section> -->
+<!-- About Us Section -->
+<section id="about" class="about">
+  <h1 class="heading">About Us</h1>
+  <div class="row">
+      <div class="content">
+          <p>
+              Cygnoz is a Tier 1 global software solutions company headquartered in Kochi, Kerala, India and was established in 2019. <br>Our clientele includes over 200 customers located in Asia Pacific, Middle East including Saudi Arabia.<br> We provide software solutions and technology services to our customers to solve their business problems and assist in growing businesses.<br>Cygnoz Connect Platform is enabling online businesses through a cost-effective seamless secure business channel to perform businesses globally.
+              <span id="dots">...</span>
+              <span id="more" style="display: none;">
+                  Our data driven automation solutions provides Advanced Analytics Engineering capabilities to provide businesses to prevent potential losses emerging from human errors, fraud and more. Many more advanced solutions through analytics engineering including real time business monitoring and forecast assisting businesses to make timely decisions. At Cygnoz, our commitment is underpinned to integrity, excellence, and customer satisfaction. It is the foundation of everything that we do. Thank you for taking time to learn about us. We look forward to serve your business through innovative solutions and services.
+              </span>
+          </p>
+          <button class="btn" onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+      </div>
+  </div>
+</section>
+
+<!-- JavaScript for Read More Functionality -->
+<script>
+  function toggleReadMore() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("readMoreBtn");
+
+      if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read More"; 
+          moreText.style.display = "none";
+      } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read Less"; 
+          moreText.style.display = "inline";
+      }
+  }
+</script>
 
   
 
@@ -74,7 +101,7 @@
     <div class="container">
         <div>
             <i class="far fa-clock fa-4x"></i>
-            <div class="counter" data-target="13500">0</div>
+            <div class="counter" data-target="43893">0</div>
             <h3>Working Hours</h3>
         </div>
         <div>
@@ -84,7 +111,7 @@
         </div>
         <div>
             <i class="fas fa-users fa-4x"></i>
-            <div class="counter" data-target="480">0</div>
+            <div class="counter" data-target="200">0</div>
             <h3>Happy Clients</h3>
         </div>
         <div>
@@ -152,9 +179,9 @@
             <span class="icon feature_box_col_six"
               ><i class="fa fa-camera"></i
             ></span>
-            <h6>Gallery Vison</h6>
+            <h6>Gallery Vision</h6>
             <p>
-              Track your Youtube Payements without hustle<br /><br /><br />
+              Track your Youtube Payments without hustle<br /><br /><br />
             </p>
           </div>
         </div>
@@ -196,13 +223,15 @@
         <div class="col-lg-4 col-sm-6">
           <div class="item"> <span class="icon feature_box_col_one"><i class="fa fa-laptop"></i></span>
             <h6>Web App Development</h6>
-            <p>Our Custom Web Development Services Include Both Front-End And Back-End Development. Whether It Is Enhancing An Existing App Or Architecting An Enterprise App, Our Developers Are Up For The Challenge.</p>
+            <p>Our custom web development services include both front-end and back-end development. Whether it is enhancing an existing app or architecting an enterprise app, our developers are up for the challenge.
+            </p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
           <div class="item"> <span class="icon feature_box_col_two"><i class="fa fa-android"></i></span>
             <h6>Mobile App Development</h6>
-            <p>We Have Expertise In Creating Multi-Platform Mobile App Solutions For Both Android And IOS Devices. Using PhoneGap, Xamarin, And React Native, We Offer Custom Mobile App That Runs Smoothly On Multiple Platforms.</p>
+            <p>We have expertise in creating multi-platform mobile app solutions for both Android and iOS devices. Using PhoneGap, Xamarin, and React Native, we offer custom mobile apps that run smoothly on multiple platforms.
+            </p>
           </div>
         </div>
         <div class="col-lg-4 col-sm-6">
@@ -227,66 +256,74 @@
       <div class="owl-carousel testimonials-carousel">
         <div class="testimonial-item row align-items-center">
           <div class="testimonial-img">
-            <img src="./images/testimonial-1.jpg" alt="Testimonial image" />
+            <!-- <img src="" alt="Testimonial image" /> -->
           </div>
           <div class="testimonial-text">
-            <h3>David Fero</h3>
-            <h4>Project Manager at Innovatech Solutions</h4>
+            <h3>Paily konatt</h3>
+            <!-- <h4>Project Manager at Innovatech Solutions</h4> -->
             <p>
-              "Cygnoz Products have boosted our productivity and efficiency.
-              Our team is more streamlined than ever. Highly recommended!"
+              "We had an excellent experience working with Cygnoz on the development of our new website. From start to finish, their team was professional, responsive, and highly skilled.
+              Their technical expertise ensured that all features we needed were seamlessly integrated, and the site performs flawlessly across all devices. Post-launch support has been prompt and efficient, addressing any questions we had quickly.
+              Overall, Cygnoz delivered a top-notch website and outstanding service. We highly recommend them for any web development projects."
             </p>
           </div>
         </div>
         <div class="testimonial-item row align-items-center">
           <div class="testimonial-img">
-            <img src="./images/testimonial-2.jpg" alt="Testimonial image" />
+            <!-- <img src="./images/testimonial-2.jpg" alt="Testimonial image" /> -->
           </div>
           <div class="testimonial-text">
-            <h3>Milanda Gates</h3>
-            <h4>IT Director at SecureNet Corp.</h4>
+            <h3>Alia Karim</h3>
+            <!-- <h4>IT Director at SecureNet Corp.</h4> -->
             <p>
-              "Switching to Cygnoz Products was the best decision we made.
-              Seamless integration and outstanding support!"
+              "I'm delighted with my purchase of the salon management software from Cygnoz!🔥
+
+              The software is excellent, and the support team, has been outstanding. The team has been consistently responsive, providing timely and effective solutions to all our queries. Their dedication to ensuring our satisfaction is truly commendable.
+              
+              I highly recommend Cygnoz and their exceptional support team for their top-notch service!"
             </p>
           </div>
         </div>
         <div class="testimonial-item row align-items-center">
           <div class="testimonial-img">
-            <img src="./images/testimonial-3.jpg" alt="Testimonial image" />
+            <!-- <img src="./images/testimonial-3.jpg" alt="Testimonial image" /> -->
           </div>
           <div class="testimonial-text">
-            <h3>Paul Dezosa</h3>
-            <h4>CFO of FutureTech Enterprises</h4>
+            <h3>Hassan Anthru
+            </h3>
+            <!-- <h4>CFO of FutureTech Enterprises</h4> -->
             <p>
-              "Our efficiency increased by 30% with Cygnoz Products. The
-              user-friendly interface is a game-changer."
+              "I've had the pleasure of working with Cynotech labs marketing team for several months now, and I must say, they're absolutely fantastic! They're highly professional, creative, and dedicated to delivering top-notch results. Their expertise in digital marketing, social media management, and content creation has significantly boosted our brand's online presence and engagement. They're always responsive, receptive to feedback, and willing to go the extra mile to ensure our satisfaction. I highly recommend this marketing team to anyone looking to elevate their brand's marketing strategy!""
             </p>
           </div>
         </div>
         <div class="testimonial-item row align-items-center">
           <div class="testimonial-img">
-            <img src="./images/testimonial-4.jpg" alt="Testimonial image" />
+            <!-- <img src="./images/testimonial-4.jpg" alt="Testimonial image" /> -->
           </div>
           <div class="testimonial-text">
-            <h3>Chang Li</h3>
-            <h4>Operations Manager at GreenEarth Ltd.</h4>
+            <h3>Shyla Hameed</h3>
+            <!-- <h4>Operations Manager at GreenEarth Ltd.</h4> -->
             <p>
-              "Cygnoz Products improved our project timelines and team
-              communication. We deliver better results faster."
+              "I recently purchased a tailoring management software from Cygnoz,and I am very pleased with its performance.The software is user-friendly and efficient, making our operations smoother.
+
+              A special mention goes to Fousiya,who handles support excellently. She is always prompt and provides accurate assistance whenever we need it.
+              
+              Highly recommended 😊"
             </p>
           </div>
         </div>
         <div class="testimonial-item row align-items-center">
           <div class="testimonial-img">
-            <img src="./images/testimonial-5.jpg" alt="Testimonial image" />
+            <!-- <img src="./images/testimonial-5.jpg" alt="Testimonial image" /> -->
           </div>
           <div class="testimonial-text">
-            <h3>Angel Gaurd</h3>
-            <h4>CEO of TechSolutions Inc.</h4>
+            <h3>Elsa Mary Gigi</h3>
+            <!-- <h4>CEO of TechSolutions Inc.</h4> -->
             <p>
-              "The security features of Cygnoz Products give us peace of
-              mind. Their support team is exceptional."
+              "I'm so glad I went with Cygnoz for my business software! Their software has been a game-changer for us, and their support team is top-notch. I've tried a few other software solutions in the past, but the support teams were totally unhelpful.
+
+              Cygnoz is a breath of fresh air - they're always super responsive and helpful. They've really exceeded our expectations and I'm so grateful to have them as a partner for our business!"
             </p>
           </div>
         </div>
@@ -303,14 +340,13 @@
             </p>
         </div>
         <div class="owl-carousel clients-carousel">
-            <img src="./images/ikea.png" alt="Client Logo" />
-            <img src="./images/nintendo.png" alt="Client Logo" />
-            <img src="./images/natgeo.png" alt="Client Logo" />
-            <img src="./images/canon.png" alt="Client Logo" />
-            <img src="./images/sony.png" alt="Client Logo" />
-            <img src="./images/jaguar.png" alt="Client Logo" />
-            <img src="./images/acer.png" alt="Client Logo" />
-            <img src="./images/astin.png" alt="Client Logo" />
+            <img src="./images/horizontel.jpg" alt="Client Logo" />
+            <img src="./images/fsalon.jpg" alt="Client Logo" />
+            <img src="./images/eurofibre.jpg" alt="Client Logo" />
+            <img src="./images/kate and mark.jpg" alt="Client Logo" />
+            <img src="./images/ksm industry.jpg" alt="Client Logo" />
+            <img src="./images/wallmarkply.jpg" alt="Client Logo" />
+            <img src="./images/springdew.jpg" alt="Client Logo" />
           </div>
     </div>
 </div>
@@ -324,10 +360,22 @@
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-<section class="team" style="margin-top: 7rem;">
-  <h1 class="heading" style="margin-top: -1.5rem;" id="team">our team</h1>
-  <p></p>
-  <div class="row">
+<!-- <section class="team" style="margin-top: 7rem;">
+  <h1 class="heading" style="margin-top: -1.5rem;" id="team">Our Team</h1>
+ 
+  <div class="contentourteam">
+    <br>
+    <p>Cygnoz, a Tier 1 global software solutions company headquartered in Kochi, Kerala, India, was established in 2019. <br>With a client base of over 200 customers across the Asia Pacific and the Middle East, including Saudi Arabia,<br>we specialize in providing software solutions and technology services to address business challenges and support business growth. 
+
+     <br> Our team is composed of full stack engineers, analytics engineers, cloud engineers, cybersecurity engineers, testing engineers, and digital marketing experts. 
+      
+     <br> The Cygnoz Connect Platform empowers online businesses with a cost-effective, seamless, and secure channel for global operations. <br>Our data-driven automation solutions offer advanced analytics engineering capabilities, helping businesses prevent potential losses due to human errors, fraud, and more.<br>We also provide cutting-edge analytics engineering solutions, including real-time business monitoring and forecasting, enabling businesses to make timely decisions.<br> At Cygnoz, we are committed to integrity, excellence, and customer satisfaction, which form the core of everything we do.<br> Thank you for learning about us. We look forward to serving your business with our innovative solutions and services.
+      </p>
+    
+    <a href="#"><button class="btn">Read More</button></a>
+</div>
+</section> -->
+  <!-- <div class="row">
       <div class="card">
           <div class="image">
               <img src="./images/pexels-andrea-piacquadio-845434.jpg" alt="Team member 1">
@@ -394,12 +442,12 @@
               </div>
           </div>
       </div>
-  </div>
-</section>
+  </div> -->
+
 
 <!-- Contact Section -->
 <section id="contact" class="contact">
-  <h1 class="heading">get in touch</h1>
+  <h1 class="heading">Get In Touch</h1>
 </section>
 <div class="contact-in">
   <div class="contact-map">
@@ -486,7 +534,7 @@
             <div class="accordion">
               <div class="accordion-header">
                 <span>+</span>
-                <h3>How can you help with my Business Needs</h3>
+                <h3>How can you help with my business needs</h3>
               </div>
               <div class="accordion-body">
                 <p>
@@ -565,7 +613,8 @@
 
                   <div class="col-lg-3 col-md-6 footer-newsletter">
                       <h4>Subscription</h4>
-                      <p>With Our Skills Put Together, You Get An Ensemble Capable Of Doing Anything And Everything Your Brand Needs. Subscribe Here To Get Our Latest Updates.</p>
+                      <p>With our skills put together, you get an ensemble capable of doing anything and everything your brand needs. Subscribe here to get our latest updates.
+                      </p>
                       <form action="" method="post">
                           <input type="email" name="email"><input type="submit"  value="Subscribe">
                       </form>
