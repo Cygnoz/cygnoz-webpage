@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
+    text-transform: none;
     transition: all .2s linear;
     text-decoration: none;
 }
@@ -39,6 +39,20 @@ body{
     border-top: .4rem solid #002e5f;
     border-left: .4rem solid #002e5f;
 }
+.contentourteam{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+       padding: 1rem 0;
+       min-height: 55vh;
+    width: 100vw;
+    top: -3rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+	
 
 .faq .heading::before, .faq .heading::after{
     border-top: .4rem solid #00bfff;
