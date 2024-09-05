@@ -53,12 +53,82 @@ body{
     
 }
 	
+.content {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    position: relative;
+}
+
+.advanced-analytics{
+    text-align:justify;
+    margin-top: 10px;
+    line-height: 1.4;
+
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    text-align: justify;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.advanced-analytics {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.btn {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
 
 .faq .heading::before, .faq .heading::after{
     border-top: .4rem solid #00bfff;
     border-left: .4rem solid #00bfff;
 }
-
+#more{
+    display:none;
+}
 .heading::before, .clients .section-header h2::before, .section-head h1::before, .testimonials .section-header h2::before, .section-head-1 h4::before{
     top: 5.8rem;
     left: -2rem;
@@ -563,6 +633,72 @@ body{
     }
 }
 
+/* Responsive adjustments for the testimonials carousel */
+.testimonials-carousel .testimonial-item {
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.testimonials .testimonial-text h3 {
+    font-size: 16px;
+}
+
+.testimonials .testimonial-text h4 {
+    font-size: 10px;
+}
+
+.testimonials .testimonial-text p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .testimonials-carousel .testimonial-item {
+        padding: 15px;
+        margin: 0 5px;
+    }
+
+    .testimonials .testimonial-text h3 {
+        font-size: 14px;
+    }
+
+    .testimonials .testimonial-text h4 {
+        font-size: 10px;
+    }
+
+    .testimonials .testimonial-text p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .testimonials-carousel .testimonial-item {
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    .testimonials .testimonial-text h3 {
+        font-size: 12px;
+    }
+
+    .testimonials .testimonial-text h4 {
+        font-size: 9px;
+    }
+
+    .testimonials .testimonial-text p {
+        font-size: 10px;
+    }
+    
+    .testimonials .testimonial-item {
+        margin: 0 0 15px;
+    }
+
+    .testimonials-carousel .owl-nav,
+    .testimonials-carousel .owl-dots {
+        display: none;
+    }
+}
+
+
 .clients {
     position: relative;
     padding: 90px 0;
@@ -874,6 +1010,8 @@ body{
         .footer .footer-top .footer-newsletter {
             margin-bottom: 30px;
         }
+
+        
         
         .footer .footer-top .social-links a {
             font-size: 18px;
@@ -969,6 +1107,34 @@ body{
             transition: 0.3s;
             cursor: pointer;
         }
+        .content {
+            text-align: justify;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+        
+        .btn {
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+       
+        
         
         .footer .footer-top .footer-newsletter input[type="submit"]:hover {
             color: #ffffff;
