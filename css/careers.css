@@ -108,6 +108,128 @@ body{
     font-size: 2rem;
     color: #333;
 }
+@media (max-width: 600px) {
+    html {
+        font-size: 50%; /* Adjusting the base font size */
+    }
+
+    .home h2 {
+        font-size: 3.5rem; /* Smaller heading size */
+    }
+
+    .header .navbar ul li a {
+        font-size: 2rem; /* Smaller navbar links */
+    }
+
+    .heading {
+        font-size: 2.5rem; /* Smaller section headings */
+    }
+
+    .career-heading p {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 600px) {
+    .header {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .header .logo img {
+        width: 15%; /* Smaller logo */
+        height: 2.5rem;
+    }
+
+    .header .fa-bars {
+        font-size: 2.5rem; /* Smaller hamburger icon */
+    }
+
+    .home {
+        min-height: 50vh; /* Adjusted min height for home section */
+    }
+
+    .career {
+        width: 95%; /* More flexible width for the career section */
+        margin: 2rem auto; /* Reduce margin */
+        padding: 5px;
+    }
+
+    .career-form {
+        flex: 100%; /* Full width form on mobile */
+    }
+
+    .career-form-txt, .career-form-email, .career-form-phone, .career-form-txtarea {
+        width: 90%; /* Adjust input widths */
+        margin-left: 5%; /* Center inputs */
+        padding: 10px;
+        font-size: 1.4rem; /* Smaller font size */
+    }
+
+    .career-form-btn {
+        width: 80%; /* Button width */
+        margin: 1rem 10%; /* Center button */
+    }
+
+    .footer {
+        padding: 20px 0; /* Reduce footer padding */
+    }
+
+    .footer .footer-top {
+        padding: 30px 0; /* Reduce top footer padding */
+    }
+}
+@media (max-width: 600px) {
+    .header .navbar {
+        top: -100%; /* Hidden by default */
+        transition: top 0.3s; /* Smooth slide in */
+    }
+
+    .header .nav-toggle {
+        top: 5rem; /* Position dropdown when toggled */
+    }
+
+    .header .fa-times {
+        font-size: 2.5rem; /* Smaller close icon */
+    }
+}
+@media (max-width: 600px) {
+    .footer .footer-top {
+        padding: 20px 0; /* Less padding */
+    }
+
+    .footer .footer-info,
+    .footer .footer-links,
+    .footer .footer-contact,
+    .footer .footer-newsletter {
+        width: 100%; /* Full width sections */
+        text-align: center; /* Center text */
+        margin-bottom: 20px; /* Space between sections */
+    }
+
+    .footer .footer-newsletter input[type="email"],
+    .footer .footer-newsletter input[type="submit"] {
+        width: 80%; /* Inputs should not be too wide */
+        margin: 0 auto 10px; /* Center inputs */
+    }
+
+    .footer .social-links a {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+@media (max-width: 600px) {
+    .career-form-btn {
+        height: 3rem; /* Smaller buttons */
+        font-size: 1.4rem;
+    }
+
+    .back-to-top {
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+    }
+}
+
 
 .heading::before, .heading::after{
     content: '';
