@@ -23,7 +23,7 @@ body{
     padding-top: 6rem;
     display: inline-block;
     font-size: 3.5rem;
-    color: #002e5f;
+    color:black;
     position: relative;
     letter-spacing: .2rem;
 }
@@ -93,6 +93,33 @@ p {
     line-height: 1.6;
     padding: 20px;
 }
+/* General styles for the logo */
+.logo {
+  display: block;
+  text-align: center; /* Center logo horizontally, if needed */
+}
+
+.logo-img {
+  min-width: 100%; /* Ensures the logo scales down on smaller screens */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+/* Add media queries for finer control on different devices */
+
+/* For very small screens (up to 576px) */
+@media (max-width: 576px) {
+  .logo-img {
+    min-width: 80%; /* Reduce size on smaller screens */
+  }
+}
+
+/* For small to medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .logo-img {
+    min-width: 90%; /* Adjust size as needed */
+  }
+}
+
 
 p {
     margin: 0;
